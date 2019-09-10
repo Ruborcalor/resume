@@ -1,4 +1,4 @@
-PWD /home/gautierk/Documents/Latex/Resume
+PWD /home/gautierk/Documents/Latex/resume
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT resume.tex

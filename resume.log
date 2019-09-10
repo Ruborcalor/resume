@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.5)  9 SEP 2019 20:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.9.5)  10 SEP 2019 10:28
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -346,18 +346,18 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 167.
  ) 
 Here is how much of TeX's memory you used:
- 6014 strings out of 492623
- 86293 string characters out of 6135670
+ 6016 strings out of 492623
+ 86319 string characters out of 6135670
  193782 words of memory out of 5000000
  9885 multiletter control sequences out of 15000+600000
  5466 words of font info for 20 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 28i,8n,35p,660b,320s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 28i,8n,35p,660b,318s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on resume.pdf (1 page, 65084 bytes).
+Output written on resume.pdf (1 page, 64831 bytes).
 PDF statistics:
- 120 PDF objects out of 1000 (max. 8388607)
- 108 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
+ 122 PDF objects out of 1000 (max. 8388607)
+ 110 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
  137 words of extra memory for PDF output out of 10000 (max. 10000000)
 
