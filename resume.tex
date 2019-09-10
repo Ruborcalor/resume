@@ -1,0 +1,169 @@
+\documentclass{article}
+
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage[margin=0.15in]{geometry}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+}
+ 
+\usepackage{xcolor}
+
+\titleformat{\section}
+{\Large\bfseries}
+{}
+{0em}
+{}[\color{green}\titlerule]
+
+\titlespacing{\section}
+{0em}{0.25em}{0.5em}
+
+\titleformat{\subsection}[runin]
+{\bfseries\large}
+{}
+{0em}
+{}
+
+\titlespacing{\subsection}
+{0.75em}{0.25em}{0em}
+
+\titleformat{\subsubsection}[runin]
+{\bfseries}
+{}
+{0em}
+{}[:]
+
+\titlespacing{\subsubsection}
+{1em}{0.25em}{0em}
+
+\titleformat{\paragraph}
+{\normalfont\normalsize}
+{}
+{0em}
+{}
+
+\titlespacing{\paragraph}
+{1em}{0.25em}{0em}
+
+
+
+\renewcommand{\maketitle}{
+\begin{center}
+{\color{green}\huge\bfseries
+\theauthor}
+
+\vspace{.25em}
+g.cole.killian@gmail.com --- http://colekillian.com
+\end{center}
+}
+
+
+\begin{document}
+
+\title{R\'esum\'e}
+\author{Cole Killian}
+
+\maketitle
+
+
+\section{Relevant Academic Specifications\hfill\normalsize College GPA: 4.00    ---     High School WGPA: 4.86}
+
+\subsubsection{McGill University}
+\hfill Intro to Software Systems, Intro to Computer Science, Abstract Algebra 1, Honours Analysis 1
+
+\subsubsection{Harvard University}
+\hfill Multivariable Calculus, Linear Algebra and Differential Equations, Theoretical Physics
+
+\subsubsection{Cambridge Rindge and Latin HS}
+\hfill AP Physics C: Mechanics (5), AP Physics C: Electricity and Magnetism (5)
+
+\subsubsection{Bethesda-Chevy Chase HS}
+\hfill AP Calculus BC (5), AP CS A (5), AP CS Principles (5), AP Statistics (5)
+
+\section{Employment History}
+
+\subsection{Harvard Research Computing: Web and Database Intern - 350+ Hours \hfill April - Aug 2019\newline}
+
+\begin{tabularx}{\linewidth}{ @{} l X r @{} }
+\ \ \ \ \ & Developed an interface that enabled clients to view, request, or terminate their storage allocations (previously this was done via email). Designed a relational database model for tracking storage allocations and storage transactions. This made it much easier to bill clients properly. Created a command line interface for interacting with the novel database.&
+\end{tabularx}
+
+\subsection{Foundation Medicine: Cytology Smears Bait Set Validation - 40+ Hours \hfill Feb - Apr 2019\newline}
+
+\begin{tabularx}{\linewidth}{ @{} l X r @{} }
+\ \ \ \ \ & Used Python to parse a CSV file and graphically compare the results of the T7 bait set with that of the D2 bait set. Synthesized the results in a presentation that summarized the findings. This helped the D2 bait set gain validity.&
+\end{tabularx}
+
+\subsection{Aspine: Website and Progressive Web App Development - 120+ Hours \hfill Dec 2018 - Present\newline}
+
+\begin{tabularx}{\linewidth}{ @{} l X r @{} }
+\ \ \ \ \ & Developed Aspine.us to revolutionize the user interface for Aspen, a grade checking service, with many new features and improved aesthetics. Aspine is now preferred by over 500 students. Worked with one other student. Specifications: Uses Node JS and html request mimicking to extract students’ information and display it nicely in a web app. \href{https://github.com/maxtkc/aspine}{Github} - \href{https://aspine.us}{Aspine.us}
+\end{tabularx}
+
+\subsection{Peer Partners: Administrator, Developer, and Tutor - 350+ Hours\hfill Jan 2016 - Dec 2018\newline}
+
+\begin{tabularx}{\linewidth}{ @{} l X r @{} }
+\ \ \ \ \ & Wrote a text mining program that saves the Peer Partners administration 100 hours a year by automating the parsing of a several thousand-row long google sheet in addition to facilitating the Peer Partners program by pairing those in want of academic assistance and those capable of delivering academic assistance. Designed a website to keep students up to date with their peer partners profiles: bccpeerpartners.com. Tutored high-school students in physics and math during lunch and after school.
+\end{tabularx}
+
+\subsection{Plough and Stars: Social Media Manager - 70+ Hours\hfill Nov 2018 - Jan 2019\newline}
+
+\begin{tabularx}{\linewidth}{ @{} l X r @{} }
+\ \ \ \ \ & Manage The Plough and Stars’s Instagram, Twitter, website, SEO, publicity, and performance recording. Developed a python script using the Facebook Graph API that would automatically upload Facebook posts to Instagram.
+\end{tabularx}
+
+\subsection{DC Sail: Sailing Instructor - 480+ Hours \hfill July 2017 - Aug 2018\newline}
+
+\begin{tabularx}{\linewidth}{ @{} l X r @{} }
+\ \ \ \ \ & Led as a sailing instructor for the Kids Set Sail program. Responsible for the education of six new students each week,  teaching them how to rig and de-rig a sailboat,  skipper and crew,  tie important knots, and work together effectively.
+\end{tabularx}
+
+\section{Awards and Honours}
+
+\paragraph{“Straight A” Award, Excellence in Mathematics Award, and Outstanding Achievement in French Award.}
+
+\paragraph{Junior Awards Ceremony Recipient of Harvard Book Award.}
+
+\paragraph{Member of National Honors Society and Math Honors Society.}
+
+\paragraph{Captain of the Winning Central Maryland Physics Olympics Team.}
+
+\paragraph{Earned Principal's Honor Roll 27 times.}
+
+\section{Extracurricular Activities}
+
+\paragraph{FIRST Robotics Controls Team Leader - 150 Hours.}
+
+\paragraph{Debate team, Physics Olympics, Boston Physics Circle, CTF Club, and Chess club.}
+\paragraph{Boston Sailing Center Frostbiting League. Placed first place out of twenty teams.}
+\paragraph{Made it to regionals as a level 10 artistic gymnast, was on the high school varsity swim \& dive team, sailed 4 seasons on the varsity sailing team, and participated in 3 seasons of crew while placing 6th in the Stotesbury Cup.}
+
+
+\section{Hobbies \& Interests}
+
+\paragraph{Playing guitar and singing in a band, street performing, and managing my guitar cover YouTube channel}
+
+\paragraph{Entrepreneurial Programming Projects}
+
+\paragraph{Optimizing my workflow (.vimrc, .bashrc, .i3/config)}
+
+\paragraph{Going to the gym, cooking, walking, hiking}
+
+
+
+\section{Programming Languages and Frameworks}
+
+Python, Node JS, Javascript, Java, Html, CSS, Bash, R, Plotly, Django
+
+\section{Languages}
+
+English (native), French (proficient)
+
+\end{document}
+
+
