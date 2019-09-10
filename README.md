@@ -1,0 +1,7 @@
+# See Resume Below
+
+<object data="https://github.com/Ruborcalor/resume/raw/master/resume.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/Ruborcalor/resume/raw/master/resume.pdf">
+        <p>This browser does not support PDFs. Please download the PDF to view it: <a href="https://github.com/Ruborcalor/resume/raw/master/resume.pdf">Download PDF</a>.</p>
+    </embed>
+</object>
