@@ -3,9 +3,11 @@
 
 \usepackage{titlesec}
 \usepackage{titling}
-\usepackage[margin=0.15in]{geometry}
+\usepackage[margin=0.55in]{geometry}
 \usepackage{tabularx}
 \usepackage{hyperref}
+\usepackage{amssymb}
+\usepackage{enumitem}
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
@@ -14,6 +16,9 @@
 }
  
 \usepackage{xcolor}
+
+\renewcommand{\labelitemi}{$\textendash$}
+\setlist{nosep}
 
 \titleformat{\section}
 {\Large\bfseries}
@@ -37,7 +42,7 @@
 {\bfseries}
 {}
 {0em}
-{}[:]
+{}[]
 
 \titlespacing{\subsubsection}
 {1em}{0.25em}{0em}
@@ -67,85 +72,85 @@
 \begin{document}
 
 \title{R\'esum\'e}
-\author{Gautier Cole Killian}
+\author{Cole Killian}
 
 \maketitle
 
+\section{Experience}
 
-\section{Relevant Academic Specifications\hfill\normalsize College GPA: 4.00    ---     High School WGPA: 4.86}
+\subsection{Harvard Research Computing: Web and Database Intern - 350+ Hours \hfill 2019}
+\begin{itemize}[leftmargin=0.5in]
+  \setlength\itemsep{0.00em}
+  \item Developed a web interface in Django that enables clients to view, request, or terminate their storage allocations remotely.
+  \item Designed a mysql database model for tracking storage allocations and storage transactions.
+  \item Used Python to create a command line interface for interacting with the novel database.
+\end{itemize}
 
-\subsubsection{McGill University (19-23)}
-\hfill Intro to Software Systems, Intro to Computer Science, Abstract Algebra 1, Honours Analysis 1
+\subsection{Aspine: Website and Progressive Web App Development - 120+ Hours \hfill 2018 - 2019}
+\begin{itemize}[leftmargin=0.5in]
+  \setlength\itemsep{0.00em}
+  \item Developed https://aspine.us, a web interface that revolutionizes the user interface for Aspen, a grade checking service, with many new features and improved aesthetics. \href{https://github.com/maxtkc/aspine}{Github} --- \href{https://aspine.us}{https://Aspine.us}
+  \item Aspine is now preferred by over 500 students. It generates revenue by displaying ads for school clubs.
+  \item Specifications: Uses Node.js and HTML request mimicking to extract students’ information and display it nicely in a web app.
+\end{itemize}
 
-\subsubsection{Harvard University (18-19)}
-\hfill Multivariable Calculus, Linear Algebra and Differential Equations, Theoretical Physics
+\subsection{FIRST Robotics Team Controls Leader - 150+ Hours \hfill 2018 - 2019}
+\begin{itemize}[leftmargin=0.5in]
+  \setlength\itemsep{0.00em}
+  \item Developed a vision processing system for automating the operation of the robot using WPILib, a library desinged to simplify using OpenCV from a robot program.
+  \item Constructed a driver control system in Java that allowed the robot to be operated remotely over wifi via a joystick.
+\end{itemize}
 
-\subsubsection{Cambridge Rindge and Latin HS (18-19)}
-\hfill AP Physics C: Mechanics (5), AP Physics C: Electricity and Magnetism (5)
+\subsection{Peer Partners: Admin, Developer, and Tutor - 350+ Volunteer Hours \hfill 2016 - 2018}
+\begin{itemize}[leftmargin=0.5in]
+  \setlength\itemsep{0.00em}
+  \item Wrote a text mining program that saves the Peer Partners administration 100 hours a year by automating the parsing of a several thousand-row long google sheet
+  \item in addition to facilitating the Peer Partners program by pairing those in want of academic assistance and those capable of delivering academic assistance.
+  \item Designed a website to keep students up to date with their peer partners profiles: bccpeerpartners.com
+  \item Tutored high-school students in physics and math during lunch and after school.
+\end{itemize}
 
-\subsubsection{Bethesda-Chevy Chase HS (15-18)}
-\hfill AP Calculus BC (5), AP CS A (5), AP CS Principles (5), AP Statistics (5)
+\subsection{Plough and Stars (Restaurant): Social Media Manager - 70+ Hours\hfill 2018 - 2019}
+\begin{itemize}[leftmargin=0.5in]
+  \setlength\itemsep{0.00em}
+  \item Manage The Plough and Stars’s Instagram, Twitter, website, SEO, publicity, and performance recording.
+  \item Developed a python script using the Facebook Graph API that automatically uploads Facebook posts to Instagram.
+\end{itemize}
 
-\section{Employment History}
+\subsection{DC Sail: Sailing Instructor - 480+ Hours \hfill 2017 - 2018}
+\begin{itemize}[leftmargin=0.5in]
+  \setlength\itemsep{0.00em}
+  \item Led as a sailing instructor for the Kids Set Sail program.
+  \item Responsible for the education of six new students each week,  teaching them how to rig and de-rig a sailboat,  skipper and crew,  tie important knots, and work together effectively.
+\end{itemize}
 
-\subsection{Harvard Research Computing: Web and Database Intern - 350+ Hours \hfill April - Aug 2019\newline}
+\section{Education\hfill\normalsize }
 
-\begin{tabularx}{\linewidth}{ @{} l X r @{} }
-\ \ \ \ \ & Developed an interface that enabled clients to view, request, or terminate their storage allocations (previously this was done via email). Designed a relational database model for tracking storage allocations and storage transactions. This made it much easier to bill clients properly. Created a command line interface for interacting with the novel database.&
-\end{tabularx}
+\subsubsection{McGill University --- B.Sc. Honours Statistics and Computer Science \hfill Expected Graduation 2023}
 
-\subsection{Foundation Medicine: Cytology Smears Bait Set Validation - 40+ Hours \hfill Feb - Apr 2019\newline}
+% \hfill Intro to Software Systems, Intro to Computer Science, Abstract Algebra 1, Honours Analysis 1
 
-\begin{tabularx}{\linewidth}{ @{} l X r @{} }
-\ \ \ \ \ & Used Python to parse a CSV file and graphically compare the results of the T7 bait set with that of the D2 bait set. Synthesized the results in a presentation that summarized the findings. This helped the D2 bait set gain validity.&
-\end{tabularx}
+\subsubsection{Harvard University --- Extension School}
+% \hfill Multivariable Calculus, Linear Algebra and Differential Equations, Theoretical Physics
 
-\subsection{Aspine: Website and Progressive Web App Development - 120+ Hours \hfill Dec 2018 - Present\newline}
-
-\begin{tabularx}{\linewidth}{ @{} l X r @{} }
-\ \ \ \ \ & Developed Aspine.us to revolutionize the user interface for Aspen, a grade checking service, with many new features and improved aesthetics. Aspine is now preferred by over 500 students. Worked with one other student. Specifications: Uses Node JS and html request mimicking to extract students’ information and display it nicely in a web app. \href{https://github.com/maxtkc/aspine}{Github} - \href{https://aspine.us}{Aspine.us}
-\end{tabularx}
-
-\subsection{Peer Partners: Admin, Developer, and Tutor - 350+ Volunteer Hours \hfill Jan 2016 - Dec 2018\newline}
-
-\begin{tabularx}{\linewidth}{ @{} l X r @{} }
-\ \ \ \ \ & Wrote a text mining program that saves the Peer Partners administration 100 hours a year by automating the parsing of a several thousand-row long google sheet in addition to facilitating the Peer Partners program by pairing those in want of academic assistance and those capable of delivering academic assistance. Designed a website to keep students up to date with their peer partners profiles: bccpeerpartners.com. Tutored high-school students in physics and math during lunch and after school.
-\end{tabularx}
-
-\subsection{Plough and Stars: Social Media Manager - 70+ Hours\hfill Nov 2018 - Jan 2019\newline}
-
-\begin{tabularx}{\linewidth}{ @{} l X r @{} }
-\ \ \ \ \ & Manage The Plough and Stars’s Instagram, Twitter, website, SEO, publicity, and performance recording. Developed a python script using the Facebook Graph API that would automatically upload Facebook posts to Instagram.
-\end{tabularx}
-
-\subsection{DC Sail: Sailing Instructor - 480+ Hours \hfill July 2017 - Aug 2018\newline}
-
-\begin{tabularx}{\linewidth}{ @{} l X r @{} }
-\ \ \ \ \ & Led as a sailing instructor for the Kids Set Sail program. Responsible for the education of six new students each week,  teaching them how to rig and de-rig a sailboat,  skipper and crew,  tie important knots, and work together effectively.
-\end{tabularx}
+% \subsubsection{Cambridge Rindge and Latin HS (18-19)}
+% \hfill AP Physics C: Mechanics (5), AP Physics C: Electricity and Magnetism (5)
+% 
+% \subsubsection{Bethesda-Chevy Chase HS (15-18)}
+% \hfill AP Calculus BC (5), AP CS A (5), AP CS Principles (5), AP Statistics (5)
 
 \section{Awards and Honours}
 
 \paragraph{McGill Renewable Killam Entrance Scholarship}
 
-\paragraph{Straight A Award, Excellence in Mathematics Award, and Outstanding Achievement in French Award.}
+\paragraph{Harvard Book Award, Straight A Award, Excellence in Mathematics Award, Outstanding Achievement in French Award.}
 
-\paragraph{Junior Awards Ceremony Recipient of Harvard Book Award.}
-
-\paragraph{Member of National Honors Society and Math Honors Society.}
-
-\paragraph{Captain of the Winning Central Maryland Physics Olympics Team.}
-
-\paragraph{Earned Principal's Honor Roll 27 times.}
 
 \section{Extracurricular Activities}
 
-\paragraph{FIRST Robotics Controls Team Leader - 150 Hours.}
-
-\paragraph{Debate team, Physics Olympics, Boston Physics Circle, CTF Club, and Chess club.}
+\paragraph{Artificial Intelligence Club, Entrepreneur Club, Debate Team}
 \paragraph{Boston Sailing Center Frostbiting League. Placed first place out of twenty teams.}
-\paragraph{Made it to regionals as a level 10 artistic gymnast, was on the high school varsity swim \& dive team, sailed 4 seasons on the varsity sailing team, and participated in 3 seasons of crew while placing 6th in the Stotesbury Cup.}
-
+\paragraph{Competitive gymnast, Varsity diver, Varsity sailor, Captain of the winning Central Maryland Physics Olympics Team.}
 
 \section{Hobbies and Interests}
 
@@ -163,11 +168,8 @@
 \subsubsection{Programming Technologies}
 \hfill Python, Javascript, Java, Html, CSS, Bash, Zsh, SQL, Node JS, Django, Plotly
 
-\subsubsection{Operating Systems}
-\hfill Fluent: Linux/Unix environment --- Proficient: Windows XP/7/8/10, Mac OS
-
-\subsubsection{Languages}
-\hfill Native: English --- Proficient: French
+% \subsubsection{Operating Systems}
+% \hfill Fluent: Linux/Unix environment --- Proficient: Windows XP/7/8/10, Mac OS
 
 \end{document}
 
