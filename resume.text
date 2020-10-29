@@ -1,0 +1,123 @@
+---
+author:
+- Cole Killian
+title: Résumé
+---
+
+<cole@colekillian.com> --- [colekillian.com](https://colekillian.com)
+--- [github.com/ruborcalor](https://github.com/ruborcalor)
+
+Developer Skills
+================
+
+### Programming Languages
+
+Javascript (React, Express), Python (Django, Locust), Bash, LaTeX, Java, C++, Lua
+
+### Tools/Services
+
+Google Cloud Platform, Google Cloud Computing, Firebase, Firestore, Stripe
+
+Experience
+==========
+
+Harvard High Performance Computing: Web Dev and Performance Testing Intern 
+--------------------------------------------------------------------------
+
+-   Refactored the user account creation pipeline, increasing processing
+    speed by **15** times (Python, Bash).
+
+-   Developed performance tests which exposed high load averages on web
+    server hosts. Identified the source of the load and found a way to
+    reduce it by **70%** (Locust).
+
+-   Built a dashboard that enables non technical users to develop a
+    thorough understanding of the Harvard super computer status (React,
+    Passenger, Node).
+
+Artifai Co-Founder and Developer
+------------------
+
+-   Making [neural style](https://arxiv.org/abs/1508.06576) technology available to non technical users, while streamlining the process for users to purchase their art on a poster/canvas.
+
+-   Developed the backend for performing neural-style (Google Cloud Computing and Firebase Functions).
+
+-   Developed the user authentication and social databases (Firebase, Firestore, and Node.js).
+
+-   Built the user interface. Visit the business at <https://artif.ai> (React, Webflow).
+
+NeuroTech: Dashboard Team 
+-------------------------
+
+-   Worked with Neurotech to build a non-invasive forearm band that can
+    predict which keys a user is typing without the need for a keyboard.
+    Applications include augmented reality.
+
+-   Developed a dashboard for visualizing realtime ML model predictions
+    and signal data (React).
+
+-   Built a server for interfacing between ML model predictions and
+    frontend applications (SocketIO, Python).
+
+Age Prediction Via Methylation Data and Machine Learning 
+--------------------------------------------------------
+
+-   Developed a machine learning model for predicting a human's age
+    based on the methylation data extracted from their blood sample
+    (Keras).
+
+-   Achieved **100%** accuracy $\pm$10 years and $>90\%$ accuracy $\pm$5
+    years.
+
+-   Developed a [web interface](https://epigenosys.com) that enables
+    clients to interact with the machine learning model. Users can tune
+    each of the 25 features and see how predicted age changes (Django).
+
+-   Presented research at McGill Science and Synergy. Made the front
+    page of Hacker News with 112 upvotes.
+
+Libravos Co-Founder and Developer: Phone Insurance Made Better -2020
+------------------------------------------------------
+
+-   Accepted to McGill's Dobson Cup and Lean Startup Program.
+    [Pitchdeck](https://docs.google.com/presentation/d/1mExXYPrHCWZ_4uRn0mu0f3_F_bhrw97eSgIJtMoN90k/edit?usp=sharing).
+
+-   Developed an endpoint for a natural language processing ai chatbot.
+    It communicated with a mobile phone app to help people learn about
+    phone insurance (Rasa, React-Native).
+    [Devpost](https://devpost.com/software/libravos-mobile-app-with-chat-bot)
+
+Harvard High Performance Computing: Web Dev and Database Intern 
+---------------------------------------------------------------
+
+-   Developed a web interface that enables clients to view, request, or terminate their storage allocations (Django).
+
+-   Designed a mysql database model for tracking storage allocations and storage transactions (MySQL).
+
+Aspine Co-Founder and Developer: Website and PWA Development - 2019
+-----------------------------------------------------
+
+-   Developed Aspine, an Open Source project that revolutionizes the user interface for Aspen, a grade checking service, with many new features and improved aesthetics (Node, HTML request mimicking). https://github.com/Aspine/aspine --- https://aspine.us
+
+-   Built an API for extracting student information from Aspen using HTML request mimicking (Node.js).
+
+-   Aspine is now preferred by over **500 students**.
+
+Education
+=========
+
+### McGill University --- B.Sc. Honors Stats and Comp Sci --- [Coursework](https://colekillian.com/coursework-overview) --- CGPA 3.97 Expected 2022
+
+Awards and Honors
+=================
+
+#### University: McGill Renewable Killam Entrance Scholarship, Faculty Of Science Scholarship
+
+#### High-school: Harvard Book Award, Straight A Award, Excellence in Mathematics Award, Outstanding French Award
+
+Hobbies and Interests
+=====================
+
+#### Gym, playing guitar, walking, jogging, and hiking.
+
+#### Entrepreneurship, blogging, competitive programming, optimizing workflow (.spacemacs, .zshrc, .i3/config).
