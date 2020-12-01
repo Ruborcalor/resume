@@ -1,233 +1,112 @@
-\documentclass{article}
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
+% A4 paper size by default, use 'letterpaper' for US letter
+\documentclass[11pt, a4paper]{awesome-cv}
+
+% Configure page margins with geometry
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
 
-\usepackage{titlesec}
-\usepackage{titling}
-\usepackage[margin=0.55in]{geometry}
-\usepackage{tabularx}
-\usepackage{hyperref}
-\usepackage{amssymb}
-\usepackage{enumitem}
-\hypersetup{
-    colorlinks=true,
-    linkcolor=blue,
-    filecolor=magenta,      
-    urlcolor=blue,
-}
- 
-\usepackage{xcolor}
+% Specify the location of the included fonts
+\fontdir[/home/gautierk/.texmf/fonts/]
 
-\renewcommand{\labelitemi}{$\textendash$}
-\setlist{nosep}
+% Color for highlights
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+\colorlet{awesome}{awesome-red}
+% Uncomment if you would like to specify your own color
+% \definecolor{awesome}{HTML}{CA63A8}
 
-\titleformat{\section}
-{\Large\bfseries}
-{}
-{0em}
-{}[\color{blue}\titlerule]
+% Colors for text
+% Uncomment if you would like to specify your own color
+% \definecolor{darktext}{HTML}{414141}
+% \definecolor{text}{HTML}{333333}
+% \definecolor{graytext}{HTML}{5D5D5D}
+% \definecolor{lighttext}{HTML}{999999}
 
-\titlespacing{\section}
-{0em}{0.25em}{0.5em}
+% Set false if you don't want to highlight section with awesome color
+\setbool{acvSectionColorHighlight}{true}
 
-\titleformat{\subsection}[runin]
-{\bfseries\large}
-{}
-{0em}
-{}
-
-\titlespacing{\subsection}
-{0.75em}{0.25em}{0em}
-
-\titleformat{\subsubsection}[runin]
-{\bfseries}
-{}
-{0em}
-{}[]
-
-\titlespacing{\subsubsection}
-{1em}{0.25em}{0em}
-
-\titleformat{\paragraph}
-{\normalfont\normalsize}
-{}
-{0em}
-{}
-
-\titlespacing{\paragraph}
-{1em}{0.25em}{0em}
+% If you would like to change the social information separator from a pipe (|) to something else
+\renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
 
+%-------------------------------------------------------------------------------
+%	PERSONAL INFORMATION
+%	Comment any of the lines below if they are not required
+%-------------------------------------------------------------------------------
+% Available options: circle|rectangle,edge/noedge,left/right
+% \photo[rectangle,edge,right]{./examples/profile}
+\name{Cole}{Killian}
+\position{Software Architect{\enskip\cdotp\enskip}Fullstack Developer}
+\address{Cambridge, MA}
 
-\renewcommand{\maketitle}{
-\begin{center}
-{\color{black}\huge\bfseries
-\theauthor}
+% \mobile{(+82) 10-9030-1843}
+\email{g.cole.killian@gmail.com}
+\homepage{https://colekillian.com}
+\github{ruborcalor}
+\linkedin{colekillian}
+% \gitlab{gitlab-id}
+% \stackoverflow{SO-id}{SO-name}
+% \twitter{@twit}
+% \skype{skype-id}
+% \reddit{reddit-id}
+% \medium{madium-id}
+% \googlescholar{googlescholar-id}{name-to-display}
+%% \firstname and \lastname will be used
+% \googlescholar{googlescholar-id}{}
+% \extrainfo{extra informations}
 
-\vspace{.25em}
-\href{mailto:cole@colekillian.com}{cole@colekillian.com} --- \href{https://colekillian.com}{colekillian.com} --- \href{https://github.com/ruborcalor}{github.com/ruborcalor} 
-\end{center}
-}
+% \quote{``Be the change that you want to see in the world."}
 
 
+%-------------------------------------------------------------------------------
 \begin{document}
 
-\title{R\'esum\'e}
-\author{Cole Killian}
+% Print the header with above personal informations
+% Give optional argument to change alignment(C: center, L: left, R: right)
+\makecvheader[C]
 
-\maketitle
-\thispagestyle{empty} 
+% Print the footer with 3 arguments(<left>, <center>, <right>)
+% Leave any of these blank if they are not needed
+\makecvfooter
+  {\today}
+  {Cole Killian~~~·~~~Résumé}
+  {\thepage}
 
-\section{Developer Skills\hfill\normalsize}
+%-------------------------------------------------------------------------------
+%	CV/RESUME CONTENT
+%	Each section is imported separately, open each file in turn to modify content
+%-------------------------------------------------------------------------------
+% \input{resume/summary.tex}
+\input{resume/skills.tex}
+\input{resume/experience.tex}
+\input{resume/honors.tex}
 
-\subsubsection{Programming Languages} 
-\hfill Javascript (React, Express), Python (Django, Locust), Bash, \LaTeX, Java, C++, Lua
-\subsubsection{Tools/Services}
-\hfill Google Cloud Platform, Google Cloud Computing, Firebase, Firestore, Stripe
-
-\section{Experience}
-
-\subsection{Harvard High Performance Computing: Web Dev and Performance Testing Intern \hfill 2020}
-\begin{itemize}[leftmargin=0.5in]
-  \setlength\itemsep{0.00em}
-  \item Refactored the user account creation pipeline, increasing processing speed by \textbf{15} times (Python, Bash).
-  \item Developed performance tests which exposed high load averages on web server hosts. Identified the source of the load and found a way to reduce it by \textbf{70\%} (Locust).
-  \item Built a dashboard that enables non technical users to develop a thorough understanding of the Harvard super computer status (React, Passenger, Node).
-    
-\end{itemize}
-
-\subsection{Artifai Co-Founder \hfill 2020}
-\begin{itemize}[leftmargin=0.5in]
-  \setlength\itemsep{0.00em}
-\item Making \href{https://arxiv.org/abs/1508.06576}{neural style} technology available to non technical users, while streamlining the process for users to purchase their art on a poster/canvas.
-\item Developed the backend for performing neural-style (Google Cloud Computing and Firebase Functions).
-\item Developed the user authentication and social databases (Firebase, Firestore, and Node.js).
-\item Built the user interface. Visit the business at \href{https://artif.ai}{https://artif.ai} (React, Webflow).
-  % \item Poster/canvas production is made possible with \textbf{Printify} integration. Payments are handled with \textbf{Stripe}.
-\end{itemize}
-
-\subsection{NeuroTech: Dashboard Team \hfill 2020}
-\begin{itemize}[leftmargin=0.5in]
-  \setlength\itemsep{0.00em}
-\item Worked with Neurotech to build a non-invasive forearm band that can predict which keys a user is typing without the need for a keyboard. Applications include augmented reality.
-\item Developed a dashboard for visualizing realtime ML model predictions and signal data (React).
-\item Built a server for interfacing between ML model predictions and frontend applications (SocketIO, Python).
-\end{itemize}
+% \input{resume/presentation.tex}
+% \input{resume/writing.tex}
+% \input{resume/committees.tex}
+\input{resume/education.tex}
+% \
 
 
-\subsection{Age Prediction Via Methylation Data and Machine Learning \hfill 2019}
-\begin{itemize}[leftmargin=0.5in]
-  \setlength\itemsep{0.00em}
-\item Developed a machine learning model for predicting a human's age based on the methylation data extracted from their blood sample (Keras).
-\item Achieved \textbf{100\%} accuracy $\pm$10 years and $>90\%$ accuracy $\pm$5 years.
-\item Developed a \href{https://epigenosys.com}{web interface} that enables clients to interact with the machine learning model. Users can tune each of the 25 features and see how predicted age changes (Django).
-\item Presented research at McGill Science and Synergy. Made the front page of Hacker News with 112 upvotes.
-\end{itemize}
-
-\subsection{Libravos Co-Founder: Phone Insurance Made Better \hfill 2019-2020}
-\begin{itemize}[leftmargin=0.5in]
-  \setlength\itemsep{0.00em}
-\item Accepted to McGill's Dobson Cup and Lean Startup Program. \href{https://docs.google.com/presentation/d/1mExXYPrHCWZ_4uRn0mu0f3_F_bhrw97eSgIJtMoN90k/edit?usp=sharing}{Pitchdeck}.
-\item Developed an endpoint for a natural language processing ai chatbot. It communicated with a mobile phone app to help people learn about phone insurance (Rasa, React-Native). \href{https://devpost.com/software/libravos-mobile-app-with-chat-bot}{Devpost}
-\end{itemize}
-
-\subsection{Harvard High Performance Computing: Web Dev and Database Intern \hfill 2019}
-\begin{itemize}[leftmargin=0.5in]
-  \setlength\itemsep{0.00em}
-  \item Developed a web interface that enables clients to view, request, or terminate their storage allocations (Django).
-  \item Designed a mysql database model for tracking storage allocations and storage transactions (MySQL).
-\end{itemize}
-
-\subsection{Aspine Co-Founder: Website and PWA Development \hfill 2018 - 2019}
-\begin{itemize}[leftmargin=0.5in]
-  \setlength\itemsep{0.00em}
-  \item Developed Aspine, an Open Source project that revolutionizes the user interface for Aspen, a grade checking service, with many new features and improved aesthetics (Node, HTML request mimicking). \href{https://github.com/Aspine/aspine}{Github} --- \href{https://aspine.us}{https://Aspine.us}
-  \item Built an API for extracting student information from Aspen using HTML request mimicking (Node.js).
-  \item Aspine is now preferred by over \textbf{500 students}.
-\end{itemize}
-
-% \subsection{FIRST Robotics Team Controls Co-Leader \hfill 2018 - 2019}
-% \begin{itemize}[leftmargin=0.5in]
-%   \setlength\itemsep{0.00em}
-%   \item Developed a vision processing system for automating the operation of the robot using WPILib, a library desinged to simplify using OpenCV from a robot program.
-%   \item Constructed a driver control system in Java that allowed the robot to be operated remotely over wifi via a joystick.
-% \end{itemize}
-
-% \subsection{Peer Partners: Admin, Developer, and Tutor \hfill 2016 - 2018}
-% \begin{itemize}[leftmargin=0.5in]
-%   \setlength\itemsep{0.00em}
-%   \item Wrote a google scripts text mining program that saves the Peer Partners administration 100 hours a year by automating the parsing of a several thousand-row long google sheet
-%   \item The script also aids with pairing those in want of academic assistance and those capable of delivering academic assistance.
-%   % \item Designed a website to keep students up to date with their peer partners profiles
-%   % \item Tutored high-school students in physics and math during lunch and after school.
-% \end{itemize}
-
-% \subsection{Plough and Stars (Restaurant): Social Media Manager \hfill 2018 - 2019}
-% \begin{itemize}[leftmargin=0.5in]
-%   \setlength\itemsep{0.00em}
-%   \item Manage The Plough and Stars’s Instagram, Twitter, website, SEO, publicity, and performance recording.
-%   \item Developed a python script using the Facebook Graph API that automatically uploads Facebook posts to Instagram.
-% \end{itemize}
-
-% \subsection{DC Sail: Sailing Instructor \hfill 2017 - 2018}
-% \begin{itemize}[leftmargin=0.5in]
-%   \setlength\itemsep{0.00em}
-%   \item Led as a sailing instructor for the Kids Set Sail program.
-%   \item Responsible for the education of six new students each week,  teaching them how to rig and de-rig a sailboat,  skipper and crew,  tie important knots, and work together effectively.
-% \end{itemize}
 
 
-% \hfill Intro to Software Systems, Intro to Computer Science, Abstract Algebra 1, Honors Analysis 1
-
-% \subsubsection{Harvard University --- Concurrent Enrollment During High School --- CGPA 4.0}
-% \hfill Multivariable Calculus, Linear Algebra and Differential Equations, Theoretical Physics
-
-% \subsubsection{Cambridge Rindge and Latin HS (18-19)}
-% \hfill AP Physics C: Mechanics (5), AP Physics C: Electricity and Magnetism (5)
-% 
-% \subsubsection{Bethesda-Chevy Chase HS (15-18)}
-% \hfill AP Calculus BC (5), AP CS A (5), AP CS Principles (5), AP Statistics (5)
-
-\section{Education\hfill\normalsize }
-
-\subsubsection{McGill University --- B.Sc. Honors Stats and Comp Sci --- \href{https://colekillian.com/coursework-overview}{Coursework} --- CGPA 3.97 \hfill Expected 2022}
-
-
-\section{Awards and Honors}
-
-\paragraph{University: McGill Renewable Killam Entrance Scholarship, Faculty Of Science Scholarship}
-
-\paragraph{High-school: Harvard Book Award, Straight A Award, Excellence in
-  Mathematics Award, Outstanding French Award}
-
-
-% \section{Extracurricular Activities}
-% 
-% \paragraph{Artificial Intelligence Club, Entrepreneur Club, Competitive Programming Club, Debate Team}
-% \paragraph{Boston Sailing Center Frostbiting League. Placed first place out of twenty teams.}
-% \paragraph{Competitive gymnast, Varsity diver, Varsity sailor, Captain of the winning Central Maryland Physics Olympics Team.}
-
-\section{Hobbies and Interests}
-
-\paragraph{Gym, playing guitar, walking, jogging, and hiking.}
-
-\paragraph{Entrepreneurship, blogging, competitive programming, optimizing workflow (.spacemacs, .zshrc, .i3/config).}
-
-% \paragraph{Optimizing my workflow (.spacemacs, .zshrc, .i3/config). Competitive programming.}
-
-
-% \section{Technical Skills}
-% 
-% \subsubsection{Programming Technologies}
-% \hfill GCP, Javascript (React, Node.js), Python (Django), \LaTeX, Java, C++, Bash
-
-% \subsubsection{Operating Systems}
-% \hfill Fluent: Linux/Unix environment --- Proficient: Windows XP/7/8/10, Mac OS
-
+%-------------------------------------------------------------------------------
 \end{document}
-
-
-
-
-% Chess club
-% Robotics club
-% Diving
