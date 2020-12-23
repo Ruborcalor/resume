@@ -1,3 +1,7 @@
-# See Resume Below
+# Content
 
-![Cannot display resume.jpg](https://github.com/Ruborcalor/resume/raw/master/resume.jpg "Resume.jpg")
+This contains the latex and pdf files for my resume and coursework.
+
+# Building
+
+The resume and coursework use the [Awesome-CV](https://github.com/posquit0/Awesome-CV) template.
