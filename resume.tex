@@ -26,6 +26,10 @@
 % Specify the location of the included fonts
 \fontdir[/home/gautierk/.texmf/fonts/]
 
+% Color href
+\definecolor{ao}{rgb}{0.0, 0.0, 1.0}
+\newcommand{\MYhref}[3][ao]{\href{#2}{\color{#1}{#3}}}%
+
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
 %                 awesome-nephritis, awesome-concrete, awesome-darknight
